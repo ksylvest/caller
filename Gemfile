@@ -25,6 +25,5 @@ gem 'coffee-script'
 
 group :test do
   gem 'rspec'
-  gem 'cucumber'
   gem 'capybara'
 end
