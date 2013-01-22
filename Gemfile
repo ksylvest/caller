@@ -1,22 +1,30 @@
-source 'https://rubygems.org'
+source :rubygems
 
 ruby '1.9.3'
 
+gem 'thin', platform: :ruby
+
 gem 'sinatra', '1.3.3'
-gem 'rake'
+
+gem 'dalli'
+gem 'memcachier'
+
 gem 'rack'
+gem 'rack-cache', require: 'rack/cache'
+gem 'rack-test', group: :test
 
-gem 'sprockets'
-
-gem 'thin'
+gem 'rake'
+gem 'pony'
 gem 'haml'
 gem 'sass'
-gem 'pony'
+gem 'neat'
 gem 'bourbon'
+gem 'uglifier'
+gem 'sprockets'
+gem 'coffee-script'
 
 group :test do
-  gem 'mocha'
-  gem 'test-spec'
-  gem 'test-unit'
-  gem 'rack-test'
+  gem 'rspec'
+  gem 'cucumber'
+  gem 'capybara'
 end
