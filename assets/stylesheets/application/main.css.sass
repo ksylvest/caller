@@ -1,0 +1,120 @@
+@import variables
+@import mixins
+
+body, html
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+
+body, html, input, textarea
+  +light()
+
+#main
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  +background-image(asset("patterns/stripe.png"), linear-gradient(45deg, $main_alpha_color, $main_delta_color, $main_omega_color))
+
+.phone
+  width: 400px
+  height: 680px
+  padding: 20px
+  margin: -340px -200px
+  position: fixed
+  top: 50%
+  left: 50%
+  +transition(all 0.4s ease-in-out)
+  +user-select(none)
+  +linear-gradient($phone_alpha_color,$phone_omega_color)
+  +box-shadow(0 2px 60px rgba($black, 0.4))
+  &:hover
+    +box-shadow(0 2px 60px rgba($black, 0.8))
+
+  .screen
+    .number
+      width: 100%
+      height: 60px
+      color: #444444
+      border: none
+      background: none
+      text-align: center
+      font-size: 32pt
+      font-weight: normal
+      &:focus
+        border: none
+        background: none
+
+  .buttons
+    clear: both
+    margin: 0
+    .button
+      width: 100px
+      height: 100px
+      display: block
+      cursor: pointer
+      margin: 10px
+      padding: 20px
+      float: left
+      +transition(all 0.2s ease-in-out)
+      +user-select(none)
+      +border-radius($radius)
+      +linear-gradient($button_alpha_color,$button_omega_color)
+      +box-shadow(inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4))
+      &:hover
+        +linear-gradient($button_alpha_color,$button_omega_color)
+        +box-shadow(inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8))
+      &:active
+        +linear-gradient($button_omega_color,$button_omega_color)
+        +box-shadow(inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8))
+      .value
+        color: #444444
+        font-size: 32pt
+        font-weight: normal
+        text-align: center
+        +box-shadow(inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4))
+      .description
+        color: #888888
+        font-size: 12pt
+        font-weight: normal
+        text-align: center
+        +box-shadow(inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4))
+
+  .actions
+    clear: both
+    margin: 0 60px 
+    .action
+      width: 100px
+      height: 100px
+      display: block
+      cursor: pointer
+      margin: 10px
+      padding: 10px
+      float: left
+      +transition(all 0.2s ease-in-out)
+      +user-select(none)
+      +border-radius($radius)
+      +box-shadow(inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4))
+      &:hover
+        +box-shadow(inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8))
+      &:active
+        +box-shadow(inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8))
+      &.dial
+        +linear-gradient($dial_alpha_color,$dial_omega_color)
+        &:active
+          +linear-gradient($dial_omega_color,$dial_omega_color)
+        .icon
+          width: 80px
+          height: 80px
+          background: asset("actions/dial.png") no-repeat center
+          opacity: 0.2
+      &.hang
+        +linear-gradient($hang_alpha_color,$hang_omega_color)
+        &:active
+          +linear-gradient($hang_omega_color,$hang_omega_color)
+        .icon
+          width: 80px
+          height: 80px
+          background: asset("actions/hang.png") no-repeat center
+          opacity: 0.2
