@@ -2,9 +2,9 @@ source :rubygems
 
 ruby '1.9.3'
 
-gem 'thin', platform: :ruby
+gem 'unicorn', platform: :ruby
 
-gem 'sinatra', '1.3.3'
+gem 'sinatra', '1.3.4'
 
 gem 'dalli'
 gem 'memcachier'
@@ -22,6 +22,8 @@ gem 'bourbon'
 gem 'uglifier'
 gem 'sprockets'
 gem 'coffee-script'
+
+gem 'newrelic_rpm'
 
 group :test do
   gem 'rspec'
