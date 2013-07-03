@@ -4,7 +4,7 @@ ruby '2.0.0'
 
 gem 'unicorn', platform: :ruby
 
-gem 'sinatra', '1.4.1'
+gem 'sinatra', '1.4.3'
 
 gem 'dalli'
 gem 'memcachier'
