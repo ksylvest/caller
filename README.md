@@ -1,6 +1,6 @@
 # Caller
 
-Caller is a Sinatra application.
+Caller is a Sinatra and Backbone online telephony to make calls to phones.
 
 ## Status
 
