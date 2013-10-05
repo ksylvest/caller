@@ -20,7 +20,7 @@ GEM
     haml (4.0.3)
       tilt
     hike (1.2.3)
-    kgio (2.8.0)
+    kgio (2.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
