@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.1.0'
 
-gem 'unicorn', platform: :ruby
+gem 'unicorn'
 
-gem 'sinatra', '1.4.3'
+gem 'sinatra', '1.4.4'
 
 gem 'dalli'
 gem 'memcachier'
