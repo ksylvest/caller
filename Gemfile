@@ -11,7 +11,6 @@ gem 'memcachier'
 
 gem 'rack'
 gem 'rack-cache', require: 'rack/cache'
-gem 'rack-test', group: :test
 
 gem 'rake'
 gem 'pony'
@@ -28,4 +27,5 @@ gem 'newrelic_rpm'
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'poltergeist'
 end
