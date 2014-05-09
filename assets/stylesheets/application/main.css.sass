@@ -28,9 +28,9 @@ body, html, input, textarea
   +transition(all 0.4s ease-in-out)
   +user-select(none)
   +linear-gradient($phone_alpha_color,$phone_omega_color)
-  +box-shadow(0 2px 60px rgba($black, 0.4))
+  box-shadow: 0 2px 60px rgba($black, 0.4)
   &:hover
-    +box-shadow(0 2px 60px rgba($black, 0.8))
+    box-shadow: 0 2px 60px rgba($black, 0.8)
 
   .screen
     .number
@@ -61,25 +61,25 @@ body, html, input, textarea
       +user-select(none)
       +border-radius($radius)
       +linear-gradient($button_alpha_color,$button_omega_color)
-      +box-shadow(inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4))
+      box-shadow: inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4)
       &:hover
         +linear-gradient($button_alpha_color,$button_omega_color)
-        +box-shadow(inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8))
+        box-shadow: inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8)
       &:active
         +linear-gradient($button_omega_color,$button_omega_color)
-        +box-shadow(inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8))
+        box-shadow: inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8)
       .value
         color: #444444
         font-size: 32pt
         font-weight: normal
         text-align: center
-        +box-shadow(inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4))
+        box-shadow: inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4)
       .description
         color: #888888
         font-size: 12pt
         font-weight: normal
         text-align: center
-        +box-shadow(inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4))
+        box-shadow: inset 0 1 2px rgba($black, 0.4), 0 1px 2px rgba($white, 0.4)
 
   .actions
     clear: both
@@ -95,11 +95,11 @@ body, html, input, textarea
       +transition(all 0.2s ease-in-out)
       +user-select(none)
       +border-radius($radius)
-      +box-shadow(inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4))
+      box-shadow: inset 0 2px 8px rgba($black, 0.4), 0 2px 8px rgba($white, 0.4)
       &:hover
-        +box-shadow(inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8))
+        box-shadow: inset 0 2px 8px rgba($black, 0.8), 0 2px 8px rgba($white, 0.8)
       &:active
-        +box-shadow(inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8))
+        box-shadow: inset 0 4px 8px rgba($black, 0.8), 0 4px 8px rgba($white, 0.8)
       &.dial
         +linear-gradient($dial_alpha_color,$dial_omega_color)
         &:active
