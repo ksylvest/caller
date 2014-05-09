@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.2'
 
 gem 'unicorn'
 
-gem 'sinatra', '1.4.4'
+gem 'sinatra', '1.4.5'
 
 gem 'dalli'
 gem 'memcachier'
